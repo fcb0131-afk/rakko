@@ -1,0 +1,6 @@
+# 元の書籍PDF（巨大 / GitHubに置く必要がないため除外）
+*.pdf
+
+# OS/エディタ
+.DS_Store
+Thumbs.db

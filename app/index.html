@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>朝の15分</title>
+<meta name="description" content="毎朝15分だけ。note×X×AIで最初の1万円までを走り切るための、自分専用のダッシュボード。">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#10131a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="朝の15分">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="screen">
+
+  <!-- ---------- top bar ---------- -->
+  <div class="bar">
+    <span class="stamp mono" id="stamp">—</span>
+    <span class="seg">
+      <button id="tLight" aria-pressed="false" onclick="App.setTheme('light')">LIGHT</button>
+      <button id="tDark" aria-pressed="false" onclick="App.setTheme('dark')">DIM</button>
+    </span>
+  </div>
+
+  <!-- ---------- flip display ---------- -->
+  <div class="flip">
+    <div class="flip-lbl">
+      <span>DAYS TO FIRST ¥10,000</span>
+      <span class="u mono" id="deadlineLabel">2027.03.31</span>
+    </div>
+    <div class="digits" id="digits"></div>
+    <div class="flip-foot">
+      <span>ROADMAP <b class="mono" id="footPct">0%</b></span>
+      <span>REVENUE <b class="mono" id="footRev">¥0</b></span>
+      <span>PACE <b class="mono" id="footPace">—</b></span>
+    </div>
+  </div>
+
+  <!-- ---------- today ---------- -->
+  <div class="p" id="taskPanel"></div>
+
+  <!-- ---------- pace ---------- -->
+  <div class="p">
+    <div class="p-head">
+      <span class="p-ttl">PACE</span>
+      <span class="tag mint" id="paceTag">—</span>
+    </div>
+
+    <div class="pace-eta">
+      <div class="l">ROADMAP 完走の見込み</div>
+      <div class="v mono" id="paceEta">—</div>
+    </div>
+
+    <div class="gauge" id="gauge">
+      <div class="act" id="gAct"></div>
+      <div class="plan" id="gPlan"></div>
+    </div>
+    <div class="leg">
+      <span><i id="legDot"></i>実際</span>
+      <span><i style="background: var(--ink-3);"></i>予定</span>
+    </div>
+
+    <div class="say" id="paceSay">—</div>
+
+    <div class="fix" id="fixBox" hidden>
+      <span class="fix-l">RECALIBRATE</span>
+      <div id="fixOptions"></div>
+    </div>
+  </div>
+
+  <!-- ---------- roadmap / progress ---------- -->
+  <div class="p">
+    <div class="p-head">
+      <span class="p-ttl">ROADMAP</span>
+      <span class="tag led mono" id="itemCount">—</span>
+    </div>
+    <div class="pg">
+      <div class="n">全<b class="mono" id="pgTotal">0</b>項目中 <b class="mono" id="pgDone">0</b>個</div>
+      <div class="v mono" id="pgPct">0%</div>
+    </div>
+    <div class="trk"><i id="pgBar" style="width: 0%;"></i></div>
+    <div class="pg-note">何日休んでも、この数字が減ることはありません。</div>
+
+    <details>
+      <summary>
+        <span class="disc">
+          全体のロードマップを見る
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </span>
+      </summary>
+      <div class="rm" id="rm"></div>
+    </details>
+  </div>
+
+  <!-- ---------- revenue ---------- -->
+  <div class="p">
+    <div class="p-head">
+      <span class="p-ttl">REVENUE</span>
+      <button class="lnk" onclick="App.toggleRevenueForm()" id="revToggle">+ 記録する</button>
+    </div>
+    <div class="mo">
+      <div>
+        <div class="l">これまでの収益</div>
+        <div class="v mono" id="revTotal">¥0</div>
+      </div>
+      <div class="g">FIRST TARGET<b class="mono">¥10,000</b></div>
+    </div>
+    <div class="trk"><i id="revBar" style="width: 0%;"></i></div>
+
+    <div class="form" id="revForm" hidden>
+      <input type="text" id="revTitle" placeholder="何が売れたか（例：初めての有料note）" autocomplete="off">
+      <div class="two">
+        <input type="date" id="revDate">
+        <input type="number" id="revAmount" placeholder="金額" inputmode="numeric" min="0">
+      </div>
+      <div class="b-row">
+        <button class="b b-out" onclick="App.toggleRevenueForm()">やめる</button>
+        <button class="b b-led" onclick="App.addRevenue()">記録する</button>
+      </div>
+    </div>
+
+    <div id="revBody"></div>
+
+    <div class="mo-far">
+      <span>NEXT ・ マンション購入資金</span>
+      <b class="mono">¥2,000,000 / 年</b>
+    </div>
+  </div>
+
+  <!-- ---------- X ---------- -->
+  <div class="p">
+    <div class="p-head">
+      <span class="p-ttl">REPORT ON X</span>
+      <button class="lnk" onclick="App.regenerateXDraft()">下書きを作り直す</button>
+    </div>
+    <textarea class="xa" rows="4" id="xText"></textarea>
+    <div class="b-row">
+      <button class="b b-out" onclick="App.copyX()">コピー</button>
+      <button class="b b-led" onclick="App.openX()">Xを開く</button>
+    </div>
+  </div>
+
+  <!-- ---------- data / backup ---------- -->
+  <div class="p">
+    <details>
+      <summary>
+        <span class="disc" style="margin-top: 0; padding-top: 0; border-top: none;">
+          DATA ・ バックアップ
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </span>
+      </summary>
+      <div class="data-body">
+        <div class="data-note">
+          記録はこの端末の中だけに保存されています。ブラウザのデータを消すと失われるので、
+          ときどき書き出しておくと安心です。<br>
+          最終バックアップ： <b class="mono" id="lastBackup">まだありません</b>
+        </div>
+        <div class="b-row">
+          <button class="b b-out" onclick="App.exportData()">書き出す</button>
+          <button class="b b-out" onclick="App.importData()">読み込む</button>
+        </div>
+        <input type="file" id="importFile" accept="application/json,.json" hidden>
+      </div>
+    </details>
+  </div>
+
+  <div class="ft">
+    <span>土日はお休み。やりたくなったら、いつでも次の1個を。</span>
+  </div>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="roadmap.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

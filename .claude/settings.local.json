@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ' *)",
+      "PowerShell(Get-Command python, python3, py -ErrorAction SilentlyContinue)",
+      "PowerShell(python -m pip install openpyxl --quiet)",
+      "Bash(unzip -l \"らっこチェックリスト.xlsx\")",
+      "Bash(mkdir -p \"/c/Users/fcb01/AppData/Local/Temp/claude/C--Users-fcb01-OneDrive-------/99781ad9-5e7f-4930-a4d4-833400546b96/scratchpad/rakko\")",
+      "Bash(unzip -o -j \"らっこチェックリスト.xlsx\" \"xl/media/*\" -d \"/c/Users/fcb01/AppData/Local/Temp/claude/C--Users-fcb01-OneDrive-------/99781ad9-5e7f-4930-a4d4-833400546b96/scratchpad/rakko\")",
+      "Read(//c/Users/fcb01/AppData/Local/Temp/claude/C--Users-fcb01-OneDrive-------/99781ad9-5e7f-4930-a4d4-833400546b96/scratchpad/**)",
+      "Read(//tmp/rakko_xml/xl/drawings/_rels/**)",
+      "PowerShell(python -m pip install pypdf --quiet)",
+      "PowerShell(python -m pip install pymupdf --quiet)",
+      "Bash(mkdir -p \"/c/Users/fcb01/AppData/Local/Temp/claude/C--Users-fcb01-OneDrive-------/99781ad9-5e7f-4930-a4d4-833400546b96/scratchpad/pdf_pages\")",
+      "Skill(artifact-design)",
+      "Skill(artifact-design:*)",
+      "PowerShell(python -m pip install pillow --quiet)",
+      "PowerShell(python -c \"import PIL; print\\(PIL.__version__\\)\")",
+      "PowerShell($env:PYTHONUTF8=1; python \"C:\\\\Users\\\\fcb01\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-fcb01-OneDrive--------\\\\99781ad9-5e7f-4930-a4d4-833400546b96\\\\scratchpad\\\\make_icons.py\")",
+      "Bash(mkdir -p \"/c/Users/fcb01/AppData/Local/Temp/claude/C--Users-fcb01-OneDrive-------/99781ad9-5e7f-4930-a4d4-833400546b96/scratchpad/rakko_book\")",
+      "Bash(PYTHONUTF8=1 python -c ' *)",
+      "Bash(claude remote-control *)",
+      "PowerShell(Get-Command claude -ErrorAction SilentlyContinue)",
+      "Bash(gh --version)",
+      "Bash(gh auth *)",
+      "Bash(git config *)",
+      "Bash(where.exe git-credential-manager *)",
+      "Bash(where.exe git-credential-manager-core *)"
+    ]
+  }
+}
