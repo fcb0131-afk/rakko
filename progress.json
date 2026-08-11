@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "sprint": {
+    "goal": "note記事を1本公開する",
+    "startDate": "2026-08-12",
+    "deadline": "2026-08-16",
+    "weekendOptional": true,
+    "scopeNote": "売る・フォロワーを集めるは対象外。Xは最低限のみ。"
+  },
+  "genreProcess": {
+    "compressed": true,
+    "notes": {}
+  },
+  "genre": null,
+  "roadmap": [
+    {
+      "id": "genre-strengths",
+      "phase": "Phase1 (8/12) ジャンル即決＋X最低限",
+      "title": "自分の強み・経験を最低20個書き出す",
+      "done": false,
+      "optional": false,
+      "source": "roadmap_30day.md Day1"
+    },
+    {
+      "id": "genre-ai-propose",
+      "phase": "Phase1 (8/12) ジャンル即決＋X最低限",
+      "title": "AIに壁打ちしてもらい、テーマ候補を出す",
+      "done": false,
+      "optional": false,
+      "source": "prompts_official.md 01,02番"
+    },
+    {
+      "id": "genre-harm-check",
+      "phase": "Phase1 (8/12) ジャンル即決＋X最低限",
+      "title": "HARMの法則＋自己実現・貢献の軸で絞り込む",
+      "done": false,
+      "optional": false,
+      "source": "main_book_principles.md HARMの法則／らっこ式三大欲求"
+    },
+    {
+      "id": "genre-decide",
+      "phase": "Phase1 (8/12) ジャンル即決＋X最低限",
+      "title": "ジャンルを1つに決定する（60〜70点でよい）",
+      "done": false,
+      "optional": false,
+      "source": "main_book_principles.md 完璧主義を捨てる"
+    },
+    {
+      "id": "x-security",
+      "phase": "Phase1 (8/12) ジャンル即決＋X最低限",
+      "title": "Xのセキュリティ設定（2要素認証・見つけやすさオフ・センシティブ解除）",
+      "done": false,
+      "optional": false,
+      "source": "main_book_principles.md 運用前の必須設定 / roadmap_30day.md Day7"
+    },
+    {
+      "id": "x-profile-min",
+      "phase": "Phase1 (8/12) ジャンル即決＋X最低限",
+      "title": "アカウント名・プロフィールを最低限整える",
+      "done": false,
+      "optional": false,
+      "source": "roadmap_30day.md Day7 / prompts_official.md 05番"
+    },
+    {
+      "id": "note-theme",
+      "phase": "Phase2 (8/13) テーマ決定＋構成作成",
+      "title": "noteのテーマを決める（DM相談は省略しAIとの壁打ちに置き換え）",
+      "done": false,
+      "optional": false,
+      "source": "roadmap_30day.md Day15-17（簡略）/ prompts_official.md 01番"
+    },
+    {
+      "id": "note-structure",
+      "phase": "Phase2 (8/13) テーマ決定＋構成作成",
+      "title": "目次・構成を作る（PASONA型、5〜7見出し）",
+      "done": false,
+      "optional": false,
+      "source": "prompts_official.md 08番 / pasona_template.md"
+    },
+    {
+      "id": "note-title",
+      "phase": "Phase2 (8/13) テーマ決定＋構成作成",
+      "title": "タイトル候補を決める",
+      "done": false,
+      "optional": false,
+      "source": "buzzwords_filtered.md（使ってよい語彙）/ prompts_official.md 08番"
+    },
+    {
+      "id": "note-voice",
+      "phase": "Phase3 (8/14) 記事執筆",
+      "title": "音声入力で下書きを吹き込む",
+      "done": false,
+      "optional": false,
+      "source": "main_book_principles.md note記事作成"
+    },
+    {
+      "id": "note-free-area",
+      "phase": "Phase3 (8/14) 記事執筆",
+      "title": "無料エリアを執筆する",
+      "done": false,
+      "optional": false,
+      "source": "main_book_principles.md 黄金テンプレート / pasona_template.md"
+    },
+    {
+      "id": "note-paid-area",
+      "phase": "Phase3 (8/14) 記事執筆",
+      "title": "有料エリアを執筆する（1章ずつAI下書き→自分の言葉を加える）",
+      "done": false,
+      "optional": false,
+      "source": "prompts_official.md 09番 / roadmap_30day.md Day21-22"
+    },
+    {
+      "id": "note-maslow-deepen",
+      "phase": "Phase3 (8/14) 記事執筆",
+      "title": "マズローの5段階欲求で読者ニーズを深掘りする",
+      "done": false,
+      "optional": true,
+      "source": "prompts_official.md 番外（プレゼント1）"
+    },
+    {
+      "id": "note-review",
+      "phase": "Phase4 (8/15-16) 推敲・公開（バッファ）",
+      "title": "推敲する（AI→目視の順）",
+      "done": false,
+      "optional": false,
+      "source": "prompts_official.md 13番 / roadmap_30day.md Day23"
+    },
+    {
+      "id": "note-mobile-check",
+      "phase": "Phase4 (8/15-16) 推敲・公開（バッファ）",
+      "title": "スマホでの見え方を確認する",
+      "done": false,
+      "optional": false,
+      "source": "main_book_principles.md note記事作成"
+    },
+    {
+      "id": "note-publish",
+      "phase": "Phase4 (8/15-16) 推敲・公開（バッファ）",
+      "title": "note記事を公開する",
+      "done": false,
+      "optional": false,
+      "source": "スプリントのゴールそのもの"
+    }
+  ],
+  "revenue": [],
+  "longTermRoadmap": "phase4_AI活用〜phase6_続ける仕組みはapp/roadmap.jsから引き継ぎ、8/16後に着手。phase5_売るはroadmap_30day.md Day24-30とprompts_official.md Step6-7を絶対フィルターを通して再構成する。"
+}

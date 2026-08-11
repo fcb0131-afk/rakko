@@ -25,7 +25,12 @@
       "Bash(gh auth *)",
       "Bash(git config *)",
       "Bash(where.exe git-credential-manager *)",
-      "Bash(where.exe git-credential-manager-core *)"
+      "Bash(where.exe git-credential-manager-core *)",
+      "PowerShell($env:PYTHONUTF8=1; python \"C:\\\\Users\\\\fcb01\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-fcb01-OneDrive--------\\\\99781ad9-5e7f-4930-a4d4-833400546b96\\\\scratchpad\\\\extract1.py\")",
+      "PowerShell($env:PYTHONUTF8=1; python \"C:\\\\Users\\\\fcb01\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-fcb01-OneDrive--------\\\\99781ad9-5e7f-4930-a4d4-833400546b96\\\\scratchpad\\\\extract2.py\")",
+      "PowerShell($env:PYTHONUTF8=1; python \"C:\\\\Users\\\\fcb01\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-fcb01-OneDrive--------\\\\99781ad9-5e7f-4930-a4d4-833400546b96\\\\scratchpad\\\\extract3.py\" | Out-File -FilePath \"C:\\\\Users\\\\fcb01\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-fcb01-OneDrive--------\\\\99781ad9-5e7f-4930-a4d4-833400546b96\\\\scratchpad\\\\bonus_text.txt\" -Encoding utf8)",
+      "PowerShell($env:PYTHONUTF8=1; python \"C:\\\\Users\\\\fcb01\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-fcb01-OneDrive--------\\\\99781ad9-5e7f-4930-a4d4-833400546b96\\\\scratchpad\\\\extract4.py\" | Out-File -FilePath \"C:\\\\Users\\\\fcb01\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-fcb01-OneDrive--------\\\\99781ad9-5e7f-4930-a4d4-833400546b96\\\\scratchpad\\\\bonus_text2.txt\" -Encoding utf8)",
+      "PowerShell($env:PYTHONUTF8=1; python \"C:\\\\Users\\\\fcb01\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-fcb01-OneDrive--------\\\\99781ad9-5e7f-4930-a4d4-833400546b96\\\\scratchpad\\\\extract5.py\")"
     ]
   }
 }
