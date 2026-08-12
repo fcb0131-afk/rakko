@@ -9,15 +9,32 @@
   },
   "genreProcess": {
     "compressed": true,
-    "notes": {}
+    "notes": {
+      "candidateThemes10": "自動車部品営業ノウハウ／BCP事務局の仕組み改善／海外赴任うつからの学び／持病(緑内障)と働く記録／早起き×AI副業実践記／LINEスタンプ作成記録／QC検定を活かした改善力／頭が固い自分が動く記録／誠実さを武器にする営業論／転勤移住の記録、の10案から本人が3・5・8を選択",
+      "valuesSource": "本人アップロードExcel「LA VIDA」（価値観／泉／人生シート）。絶対に大切にしたい価値観5つ＝感謝と恩返し・他者貢献・だからどうするか・自立と自律・一歩一歩",
+      "adhdConsideration": "本人がADHD自称を検討したが未診断のため、リスクを説明し不採用。代わりに本人の言葉「バカ真面目」等を提案 → 最終的に「不器用リーマン」に着地",
+      "caution": "有料エリアで漫画の名言・格言を使う際は、名言より本人自身の言葉・体験が主になる分量バランスを意識する（book-guardian助言、著作権的にも引用の範囲に収めること）"
+    }
   },
-  "genre": null,
+  "genre": {
+    "title": "不器用リーマンの第二章｜人生、1ミリずつ",
+    "subtitle": "一度折れたリーマンが、早起き×AIで人生を立て直していく実践記録。仕事、副業、朝活。昨日より1ミリ前へ。",
+    "harm": "主にA(Ambition:自己変革・キャリア再起)、副次的にH(Health:メンタルヘルスからの回復)",
+    "pillars": [
+      "AI仕事術",
+      "朝活・副業",
+      "考え方（漫画の名言・世の中の格言×挫折からの再起。LA VIDA Excelの価値観シートを主に参照）"
+    ],
+    "decidedOn": "2026-08-12",
+    "bookGuardianChecked": true,
+    "futureSeriesIdea": "発信が育ったら「不器用リーマンの第二章」をシリーズ名にし、個々の有料noteに「AI編」「朝活編」「仕事術編」「副業編」をぶら下げる構想"
+  },
   "roadmap": [
     {
       "id": "genre-strengths",
       "phase": "Phase1 (8/12) ジャンル即決＋X最低限",
       "title": "自分の強み・経験を最低20個書き出す",
-      "done": false,
+      "done": true,
       "optional": false,
       "source": "roadmap_30day.md Day1"
     },
@@ -25,7 +42,7 @@
       "id": "genre-ai-propose",
       "phase": "Phase1 (8/12) ジャンル即決＋X最低限",
       "title": "AIに壁打ちしてもらい、テーマ候補を出す",
-      "done": false,
+      "done": true,
       "optional": false,
       "source": "prompts_official.md 01,02番"
     },
@@ -33,7 +50,7 @@
       "id": "genre-harm-check",
       "phase": "Phase1 (8/12) ジャンル即決＋X最低限",
       "title": "HARMの法則＋自己実現・貢献の軸で絞り込む",
-      "done": false,
+      "done": true,
       "optional": false,
       "source": "main_book_principles.md HARMの法則／らっこ式三大欲求"
     },
@@ -41,7 +58,7 @@
       "id": "genre-decide",
       "phase": "Phase1 (8/12) ジャンル即決＋X最低限",
       "title": "ジャンルを1つに決定する（60〜70点でよい）",
-      "done": false,
+      "done": true,
       "optional": false,
       "source": "main_book_principles.md 完璧主義を捨てる"
     },
