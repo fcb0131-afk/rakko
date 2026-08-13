@@ -66,7 +66,7 @@
       "id": "x-security",
       "phase": "Phase1 (8/12) ジャンル即決＋X最低限",
       "title": "Xのセキュリティ設定（2要素認証・見つけやすさオフ・センシティブ解除）",
-      "done": false,
+      "done": true,
       "optional": false,
       "source": "main_book_principles.md 運用前の必須設定 / roadmap_30day.md Day7"
     },
