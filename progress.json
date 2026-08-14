@@ -53,7 +53,9 @@
     },
     "title": "不器用リーマンの第二章｜南米で心が折れた僕が、1ミリずつ立て直した記録",
     "titleDecidedOn": "2026-08-14",
-    "titleBookGuardianChecked": true
+    "titleBookGuardianChecked": true,
+    "draftFile": "note_draft.md",
+    "sectionsWritten": ["1. 南米で、全部壊れた日"]
   },
   "xProfile": {
     "accountName": "ミリオ",
@@ -138,7 +140,7 @@
       "id": "note-voice",
       "phase": "Phase3 (8/14) 記事執筆",
       "title": "音声入力で下書きを吹き込む",
-      "done": false,
+      "done": true,
       "optional": false,
       "source": "main_book_principles.md note記事作成"
     },
