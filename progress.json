@@ -29,6 +29,12 @@
     "bookGuardianChecked": true,
     "futureSeriesIdea": "発信が育ったら「不器用リーマンの第二章」をシリーズ名にし、個々の有料noteに「AI編」「朝活編」「仕事術編」「副業編」をぶら下げる構想"
   },
+  "xProfile": {
+    "accountName": "ミリオ",
+    "bio": "自動車部品営業14年、大口商談を自社シェア100%で受注した実績あり。うつで心が折れて帰国した37歳サラリーマン、現在5:30起床×AIで仕事・副業を1ミリずつ立て直し中。動けない人へ記録を共有します→note「不器用リーマンの第二章」",
+    "decidedOn": "2026-08-12",
+    "bookGuardianChecked": true
+  },
   "roadmap": [
     {
       "id": "genre-strengths",
@@ -74,7 +80,7 @@
       "id": "x-profile-min",
       "phase": "Phase1 (8/12) ジャンル即決＋X最低限",
       "title": "アカウント名・プロフィールを最低限整える",
-      "done": false,
+      "done": true,
       "optional": false,
       "source": "roadmap_30day.md Day7 / prompts_official.md 05番"
     },
