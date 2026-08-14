@@ -50,7 +50,10 @@
       "basedOn": "本編の『無料エリアの黄金テンプレート』12項目（原本）を土台に、恐怖訴求(項目3)・限定希少演出(項目10)を除去し、口コミ/特典/購入ハードル軽減(項目7,8,11)は今回のスコープ外として省略。PASONA型で圧縮",
       "structureDecidedOn": "2026-08-14",
       "bookGuardianChecked": true
-    }
+    },
+    "title": "不器用リーマンの第二章｜南米で心が折れた僕が、1ミリずつ立て直した記録",
+    "titleDecidedOn": "2026-08-14",
+    "titleBookGuardianChecked": true
   },
   "xProfile": {
     "accountName": "ミリオ",
@@ -127,7 +130,7 @@
       "id": "note-title",
       "phase": "Phase2 (8/13) テーマ決定＋構成作成",
       "title": "タイトル候補を決める",
-      "done": false,
+      "done": true,
       "optional": false,
       "source": "buzzwords_filtered.md（使ってよい語彙）/ prompts_official.md 08番"
     },
