@@ -55,7 +55,7 @@
     "titleDecidedOn": "2026-08-14",
     "titleBookGuardianChecked": true,
     "draftFile": "note_draft.md",
-    "sectionsWritten": ["1. 南米で、全部壊れた日", "2. \"また頑張れ\"が一番きつい"]
+    "sectionsWritten": ["1〜8 全セクション執筆完了（無料5・有料3）"]
   },
   "xProfile": {
     "accountName": "ミリオ",
@@ -148,7 +148,7 @@
       "id": "note-free-area",
       "phase": "Phase3 (8/14) 記事執筆",
       "title": "無料エリアを執筆する",
-      "done": false,
+      "done": true,
       "optional": false,
       "source": "main_book_principles.md 黄金テンプレート / pasona_template.md"
     },
@@ -156,7 +156,7 @@
       "id": "note-paid-area",
       "phase": "Phase3 (8/14) 記事執筆",
       "title": "有料エリアを執筆する（1章ずつAI下書き→自分の言葉を加える）",
-      "done": false,
+      "done": true,
       "optional": false,
       "source": "prompts_official.md 09番 / roadmap_30day.md Day21-22"
     },
