@@ -196,6 +196,23 @@
       "source": "スプリントのゴールそのもの"
     }
   ],
+  "postSprint": {
+    "phase": "8/17〜: シリーズ化と収益化の準備段階",
+    "note": "収益化テクニック(希少性演出・モニター募集・販売告知)はシリーズが育ってから絶対フィルターを通して導入する。今はまず記録を積み重ねる段階",
+    "seriesPlan": [
+      {"order": 1, "title": "不器用リーマンの第二章｜南米で心が折れた僕が、1ミリずつ立て直した記録", "status": "公開済み", "url": "https://note.com/biz_b_forward/n/n992b20e1abb5"},
+      {"order": 2, "title": "朝活編（仮）", "status": "未着手", "note": "5:30起床のルーティンをさらに深掘り"},
+      {"order": 3, "title": "仕事術編（仮）", "status": "未着手", "note": "AI仕事術・実務での使い方"},
+      {"order": 4, "title": "副業編（仮）", "status": "未着手", "note": "このnote×AI副業チャレンジ自体の記録"}
+    ],
+    "nextAction": {
+      "date": "2026-08-18",
+      "task": "Xでnote1公開の報告を投稿する（宣伝ではなく記録共有のトーン）",
+      "draftPost": "南米で全部壊れてから、1ミリずつ立て直してきた記録を、noteに書きました。うまくいった話じゃなく、今もまだ途中の話です。もしよければ読んでみてください。",
+      "bookGuardianChecked": true,
+      "done": false
+    }
+  },
   "revenue": [],
   "longTermRoadmap": "phase4_AI活用〜phase6_続ける仕組みはapp/roadmap.jsから引き継ぎ、8/16後に着手。phase5_売るはroadmap_30day.md Day24-30とprompts_official.md Step6-7を絶対フィルターを通して再構成する。"
 }
