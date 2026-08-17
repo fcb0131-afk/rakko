@@ -206,12 +206,19 @@
       {"order": 4, "title": "副業編（仮）", "status": "未着手", "note": "このnote×AI副業チャレンジ自体の記録"}
     ],
     "nextAction": {
-      "date": "2026-08-18",
+      "date": "2026-08-17",
       "task": "Xでnote1公開の報告を投稿する（宣伝ではなく記録共有のトーン）",
       "draftPost": "南米で全部壊れてから、1ミリずつ立て直してきた記録を、noteに書きました。うまくいった話じゃなく、今もまだ途中の話です。もしよければ読んでみてください。",
       "bookGuardianChecked": true,
-      "done": false
-    }
+      "done": true
+    },
+    "roadmapStages": {
+      "A": "発信の土台を安定させる（note1告知＋Xを1日1〜3投稿で1週間継続＋AI活用の型作り）← 今ここ",
+      "B": "シリーズを1本ずつ積み上げる（note2朝活編→note3仕事術編→note4副業編、公開のたびにX報告）",
+      "C": "収益化を組み込む（シリーズ2〜3本育ってから、価格設定・販売の工夫を絶対フィルター越しに導入）",
+      "D": "続ける仕組み（並行して常に：失敗しても翌日再開／最低半年継続／記事の追記更新）"
+    },
+    "nextCheckpoint": "Xを1日1〜3投稿で1週間続けたタイミングで次のセッションを再開し、Stage B（note2「朝活編」のテーマ決め）に着手する"
   },
   "revenue": [],
   "longTermRoadmap": "phase4_AI活用〜phase6_続ける仕組みはapp/roadmap.jsから引き継ぎ、8/16後に着手。phase5_売るはroadmap_30day.md Day24-30とprompts_official.md Step6-7を絶対フィルターを通して再構成する。"
