@@ -1,5 +1,7 @@
 # 元の書籍PDF（巨大 / GitHubに置く必要がないため除外）
+# ただしbook_notes/配下は例外（Git LFS管理でPDF原本を置く運用に変更）
 *.pdf
+!book_notes/*.pdf
 
 # OS/エディタ
 .DS_Store
